@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="Stylesheet" href="css/mobile-nav.css" />
+		<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$('#nav-toggle').click(function(event) {
+				$(this).toggleClass('active');
+				if ($('#nav-toggle').hasClass('active'))
+				{
+					$('#nav').show();
+				}
+					else
+				{
+					$('#nav').hide();
+				};
+			});
+		});
+		</script>
+	</head>
+	<body>
+		<div id="menu-icon">
+			<a href="#" id="nav-toggle"><span></span></a>
+		</div>
+		<div id="nav" class="active">
+			<ul id="navbar">
+				<li><a href="index.html">Home</a>
+				</li><li><a href="visit.html">Visit</a>
+				</li><li><a href="shop.html">Shop</a>
+				</li><li><a href="our-story.html">Our Story</a>
+				</li><li><a href="private-parties.html">Private Parties</a>
+				</li><li><a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+		<div><p>This is the Contact page</p></div>
+
+	</body>
+</html>
