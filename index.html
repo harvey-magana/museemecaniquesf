@@ -1,15 +1,30 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="Stylesheet" href="/css/mobile-nav.css" />
-<link rel="Stylesheet" href="/js/mobile-nav.js" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="Stylesheet" href="css/mobile-nav.css" />
+		<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$('#nav-toggle').click(function(event) {
+				$(this).toggleClass('active');
+				if ($('#nav-toggle').hasClass('active'))
+				{
+					$('#nav').show();
+				}
+					else
+				{
+					$('#nav').hide();
+				};
+			});
+		});
+		</script>
 	</head>
 	<body>
 		<div id="menu-icon">
 			<a href="#" id="nav-toggle"><span></span></a>
 		</div>
-		<div id="nav">
+		<div id="nav" class="active">
 			<ul id="navbar">
 				<li><a href="#">Home</a>
 				</li><li><a href="#">Gallery</a>
