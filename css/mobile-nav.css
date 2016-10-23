@@ -53,7 +53,7 @@ ul#navbar li a{
 	padding: 10px;
 	color: #FF0000;
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-	background: rgba(255,170,212,1);
+	background: #dedede;
 	transition: all 0.3s ease;
 }
 ul#navbar li a:hover{
