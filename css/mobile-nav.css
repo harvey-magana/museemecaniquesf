@@ -1,6 +1,9 @@
 body{
 	background: #1E1E1E;
 }
+p {
+	color: #fff;
+}
 #nav{
 }
 #nav-toggle{
