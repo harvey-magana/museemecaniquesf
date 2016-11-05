@@ -354,6 +354,11 @@ textarea {
           text-align: center;
           z-index: 9998;
         }
+        .site-title {
+          width: 100%;
+          padding: 10px 0;
+          font-weight: bolder;
+        }
 
         /* Footer */
         .site-footer {
@@ -617,6 +622,11 @@ textarea {
           padding: 5px 0;
           text-align: center;
           z-index: 9998;
+        }
+        .site-title {
+          width: 100%;
+          padding: 10px 0;
+          font-weight: bolder;
         }
 
         /* Footer */
